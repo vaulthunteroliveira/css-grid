@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10rem;
+    color:white;
+    /* background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%); */
+}
+
+body {
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "barralateral principal"
+        "barralateral rodape"
+    ;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #1867c0;
+}
+
+.principal{
+    grid-area: principal;
+    background-color: forestgreen;
+    overflow-y: scroll;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: fuchsia;
+}
+
+.barralateral{
+    grid-area: barralateral;
+    background-color: gold;
+    overflow-y: scroll;
+}
+
+span{
+    display: block;
+}
