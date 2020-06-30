@@ -19,12 +19,13 @@ html {
 body {
     display: grid;
     grid-template-rows: 120px 1fr 60px;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 20% 1fr;
     grid-template-areas:
         "cabecalho cabecalho"
         "barralateral principal"
         "barralateral rodape"
     ;
+    
 }
 
 .cabecalho {
@@ -36,6 +37,7 @@ body {
     grid-area: principal;
     background-color: forestgreen;
     overflow-y: scroll;
+
 }
 
 .rodape {
@@ -47,6 +49,7 @@ body {
     grid-area: barralateral;
     background-color: gold;
     overflow-y: scroll;
+
 }
 
 span{
