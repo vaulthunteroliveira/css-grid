@@ -13,7 +13,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10rem;
     color:white;
-    /* background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%); */
+    
 }
 
 body {
@@ -21,16 +21,16 @@ body {
     grid-template-rows: 120px 1fr 60px;
     grid-template-columns: 20% 1fr;
     grid-template-areas:
-        "cabecalho cabecalho"
-        "barralateral principal"
-        "barralateral rodape"
+        "cabecalho      cabecalho"
+        "barralateral   principal"
+        "barralateral   rodape"
     ;
     
 }
 
 .cabecalho {
     grid-area: cabecalho;
-    background-color: #1867c0;
+    background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%);
 }
 
 .principal{
@@ -55,3 +55,24 @@ body {
 span{
     display: block;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
