@@ -1,78 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10rem;
-    color:white;
-    
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10rem;
+  color: white;
 }
 
 body {
-    display: grid;
-    grid-template-rows: 120px 1fr 60px;
-    grid-template-columns: 20% 1fr;
-    grid-template-areas:
-        "cabecalho      cabecalho"
-        "barralateral   principal"
-        "barralateral   rodape"
-    ;
-    
+  display: grid;
+  grid-template-rows: 120px 1fr 60px;
+  grid-template-columns: 20% 1fr;
+  grid-template-areas:
+    "cabecalho      cabecalho"
+    "barralateral   principal"
+    "barralateral   rodape";
 }
 
 .cabecalho {
-    grid-area: cabecalho;
-    background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%);
+  display: grid;  
+  grid-area: cabecalho;
+  background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%);
+  grid-template-rows: 1fr;
+  grid-template-columns: 20% 1fr;
+  grid-template-areas:
+    "cabecalhoPart1 cabecalhoPart2";
 }
 
-.principal{
-    grid-area: principal;
-    background-color: forestgreen;
-    overflow-y: scroll;
+.cabecalhoPart1 {
+    grid-area: cabecalhoPart1;
+    background-color: gold;
+}
 
+.cabecalhoPart2 {
+    grid-area: cabecalhoPart2;
+    background-color: forestgreen;
+}
+
+.principal {
+  grid-area: principal;
+  background-color: indigo;
+  overflow-y: scroll;
 }
 
 .rodape {
-    grid-area: rodape;
-    background-color: fuchsia;
+  grid-area: rodape;
+  background-color: fuchsia;
 }
 
-.barralateral{
-    grid-area: barralateral;
-    background-color: gold;
-    overflow-y: scroll;
-
+.barralateral {
+  grid-area: barralateral;
+  background-color: orangered;
+  overflow-y: scroll;
 }
 
-span{
-    display: block;
+span {
+  display: block;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+  width: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
